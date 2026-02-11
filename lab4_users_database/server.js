@@ -10,7 +10,7 @@ app.use(express.json()); // For parsing JSON
 app.use(express.urlencoded({ extended: true })); // For parsing URL-encoded data from forms
 
 //helper function to connect to MongoDB asynchronously
-const DB_CONNECTION = 'mongodb+srv://kalllak17_db_user:pdDl1m7pDOXdGVRQ@cluster0.odzckbh.mongodb.net/comp3133_lab04?retryWrites=true&w=majority&appName=Cluster0';
+const DB_CONNECTION = '';
 const connectDB = async() => {
     try{
         console.log(`Attempting to connect to DB`);
