@@ -5,7 +5,6 @@ const inputFile = 'input_countries.csv';
 const outputCanadaFile = 'canada.txt';
 const outputUSAFile = 'usa.txt';
 
-
 function deleteFile(filePath){
     if (fs.existsSync(filePath)){
         fs.unlinkSync(filePath)
@@ -13,7 +12,6 @@ function deleteFile(filePath){
 }
 deleteFile(outputCanadaFile)
 deleteFile(outputUSAFile)
-
 
 const canadaStream = fs.createWriteStream(outputCanadaFile);
 const usaStream = fs.createWriteStream(outputUSAFile);
